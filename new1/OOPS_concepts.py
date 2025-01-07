@@ -53,6 +53,7 @@
 
 
 # inheritance :
+# single inheritance 
 class A :
     def info_1 (self):
         print ("this is parent class ")
@@ -64,3 +65,48 @@ class B (A):
 a = B()
 a.info_1()
 a.info_2()
+print ("\n")
+
+
+
+
+# multilevel inheritance 
+class C (B):
+    def info_3(self):
+        print ("this is the second level of inheritance ")
+
+b = C()
+b.info_1()
+b.info_2()
+b.info_3()
+print ("\n")
+
+
+# hierarchal inheritance & multiple inheritance
+class P :
+    def info_4(self):
+        print ("this is another parent class")
+
+class Q (A ,P):
+    def info_5(self ):
+        print ("this has multiple inheritances ")
+
+c = Q()
+c.info_1()
+c.info_4()
+c.info_5()
+print ("\n")
+
+
+#  hybrid inheritance:
+class E (B , Q):
+    def info_6(self):
+        print (" this is the exapmle of hybrid inheritance ")
+
+d = E()
+d.info_1()
+d.info_2()
+d.info_4()
+d.info_5()
+d.info_6()
+print ("\n")
