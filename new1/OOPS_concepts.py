@@ -35,18 +35,32 @@
 
 
 # clg name & address parameterised 
-# clg id & dept = unparamerised 
-class college :
-    def info_1 (self , clg_name , clg_addr ):
-        print ("the name of the college is :" , clg_name)
-        print ("the college address :" , clg_addr)
+# # clg id & dept = unparamerised 
+# class college :
+#     def info_1 (self , clg_name , clg_addr ):
+#         print ("the name of the college is :" , clg_name)
+#         print ("the college address :" , clg_addr)
 
-    def info_2 (self):
-        self.clg_id = 10213
-        self.clg_dept = "artificial intelligence "
-        print ("the college id :", self.clg_id ,end = " " )
-        print ("the department is :", self.clg_dept)
+#     def info_2 (self):
+#         self.clg_id = 10213
+#         self.clg_dept = "artificial intelligence "
+#         print ("the college id :", self.clg_id ,end = " " )
+#         print ("the department is :", self.clg_dept)
 
-obj = college ()
-obj.info_1("pgmcoe ", "wagholi")
-obj.info_2()
+# obj = college ()
+# obj.info_1("pgmcoe ", "wagholi")
+# obj.info_2()
+
+
+# inheritance :
+class A :
+    def info_1 (self):
+        print ("this is parent class ")
+
+class B (A):
+    def info_2(self):
+        print ("this is the child class ")
+
+a = B()
+a.info_1()
+a.info_2()
