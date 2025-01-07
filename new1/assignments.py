@@ -48,7 +48,7 @@ year = int (input ("enter a year :"))
 if (year%4 == 0):
     print ("the given year is a leap year !")
 else :
-    print ("the given year is not a leap year !")
+    print ("the given year is not a leap year !")/
 
 # assignment_no.7
 

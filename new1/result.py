@@ -1,0 +1,21 @@
+name=str(input  ("Enter your name :"))
+std=int(input  ("Enter your standard :"))
+div=str(input  ("Enter your division :"))
+eng_mrks=int(input  ("Enter your marks in english :"))
+sci_mrks=int(input  ("Enter your marks in science :"))
+math_mrks=int(input  ("Enter your marks in mathmatics  :"))
+history_mrks=int(input  ("Enter your marks in history :"))
+max_marks=400
+sum_marks  =eng_mrks+sci_mrks+math_mrks+ history_mrks
+total_marks=(f"{sum_marks} / {max_marks}")
+percentage = (sum_marks/ max_marks) * 100
+print ("----------Result----------")
+print ("Name :", name , end = ' ' ) 
+print ("Standard :", std , end = ' ' ) 
+print ("Division:", div ) 
+print ("English :", eng_mrks)
+print ("Science :", sci_mrks)
+print ("Mathmatics :", math_mrks)
+print ("History :", history_mrks)
+print (" Total Marks :", total_marks , end = ' ' )                             
+print ("Percentage  :", percentage , end = ' ' ) 
